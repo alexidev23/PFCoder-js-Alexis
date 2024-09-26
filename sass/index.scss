@@ -1,0 +1,47 @@
+$body: #040D12;
+$navbar: #003C43;
+$color-pricipal: #434553;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body;
+}
+
+header {
+  background-color: $navbar;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 2rem;
+}
+
+.titulo h1 {
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  stroke: white;
+}
