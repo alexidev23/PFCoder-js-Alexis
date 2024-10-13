@@ -168,4 +168,65 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background-color: #032B34;
+  width: 100%;
+  padding: 3rem 6rem 14px 6rem;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-title {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer .footer-container--info {
+  list-style: none;
+}
+footer .footer-container--info li {
+  margin-top: 4px;
+}
+footer .footer-container--info li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+footer .footer-container--redes {
+  color: white;
+}
+footer .footer-container--redes .medios-comunicacion ul {
+  list-style: none;
+  margin: 10px 0;
+}
+footer .footer-container--redes .redes-sociales {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .footer-container--redes .redes-sociales a {
+  width: 40px;
+  height: 40px;
+  border: 2px white solid;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+footer .footer-container--redes .horarios p {
+  margin: 10px 0;
+}
+footer .copyright {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=categoria.css.map */

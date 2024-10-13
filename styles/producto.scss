@@ -171,3 +171,73 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+// Footer
+
+footer {
+  background-color: #032B34;
+  width: 100%;
+  padding:3rem 6rem 14px 6rem;
+
+  & .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .footer-title {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  & .footer-container--info {
+    list-style: none;
+    & li {
+      margin-top: 4px;
+      & a {
+        text-decoration: none;
+        color: white;
+        font-size: .95rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  & .footer-container--redes {
+    color: white;
+    & .medios-comunicacion ul {
+        list-style: none;
+        margin: 10px 0;
+      }
+
+    & .redes-sociales {
+      margin: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      & a {
+        width: 40px;
+        height: 40px;
+        border: 2px white solid;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+
+    & .horarios p {
+      margin: 10px 0;
+    }
+  }
+
+  & .copyright {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: .9rem;
+  }
+}
