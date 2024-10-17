@@ -23,7 +23,7 @@
         <a href="./logIn.html">
           <img src="./img/icons/icon-user.svg" alt="Icono de usuario" height="30" width="30">
         </a>
-        <a class="cart-icon">
+        <a href="./carrito_compras.html" class="cart-icon">
           <img src="./img/icons/icon-cart.svg" alt="Icono de carrito" height="30" width="30">
           <span class="cart-count">0</span>
         </a>
@@ -31,7 +31,7 @@
     </div>
     <div class="header-bottom">
       <div class="categories-menu">
-        <button class="categories-btn">filtro:</button>
+        <button class="categories-btn">Categorías ▼</button>
         <div class="categories-content">
           <a href="#">Electrónica</a>
           <a href="#">Ropa</a>
@@ -39,14 +39,233 @@
           <a href="#">Deportes</a>
         </div>
       </div>
-      <div class="category-links" style="color: black;">
-        ordernar por:
+      <div class="category-links">
+        <a href="#">Ofertas</a>
+        <a href="#">Más Vendidos</a>
+        <a href="#">Nuevo</a>
       </div>
     </div>
   </header>
 
-  <div style="height: 100vh;border: 1px red solid;">
+  <div class="categoria">
+    <div class="categoria-container--1">
+      <h1>Categoria del producto</h1>
+      <div class="categoria-container--1_filtros">
+        <form>
+          <label for="orden">Ordenar por:</label>
+          <select name="orden" id="orden">
+            <option value=""></option>
+            <option value="menorPrecio">Menor precio</option>
+            <option value="mayorPrecio">Mayor precio</option>
+            <option value="nombreAsc">Nombre asc.</option>
+            <option value="nombreDesc">Nombre desc.</option>
+          </select>
+        </form>
+        <form>
+          <label for="mostrar">Mostrar:</label>
+          <select name="mostrar" id="mostrar">
+            <option value=""></option>
+            <option value="10" selected>10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="categoria-container--2">
+      <div class="categoria-container--2_filtros">
+        <details open>
+          <summary>Categoria</summary>
+          <div class="filtros-opciones">
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+          </div>
+        </details>
 
+        <details open>
+          <summary>Marca</summary>
+          <div class="filtros-opciones">
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+          </div>
+        </details>
+
+        <details open>
+          <summary>Precio</summary>
+          <div class="price-range">
+            <input type="range" id="price" name="price" min="0" max="1000000" value="1000000">
+          </div>
+          <div>$0 - $<span id="price-value">1000000</span></div>
+        </details>
+
+        <details>
+          <summary>Descuento</summary>
+          <div class="filtros-opciones">
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+          </div>
+        </details>
+
+        <details>
+          <summary>Cuotas</summary>
+          <div class="filtros-opciones">
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+            <label><input type="checkbox" name="" id="">Televisor</label>
+          </div>
+        </details>
+      </div>
+      <div class="categoria-container--3_productos">
+        <div class="categoria-container--3_productos-caja">
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+
+          <a href="./producto.html" class="categoria-productos--item">
+            <div class="categoria-productos--item_imagen">
+              <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+            <div class="categoria-productos--item_info">
+              <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+              <p>$450.000</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="categoria-paginacion">
+          <nav class="pagination">
+            <a href="#" class="disabled">&laquo; Anterior</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Siguiente &raquo;</a>
+          </nav>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Icono de whatsapp -->
@@ -115,5 +334,13 @@
       Copyright © 2023 Tech Shop. Todos los derechos reservados.
     </div>
   </footer>
+  <script>
+    // Script para actualizar el valor del precio
+    const priceSlider = document.getElementById('price');
+    const priceValue = document.getElementById('price-value');
+    priceSlider.oninput = function() {
+      priceValue.innerHTML = this.value;
+    }
+  </script>
 </body>
 </html>
