@@ -81,6 +81,16 @@ a {
   align-items: center;
 }
 
+.nav-links #logInUser {
+  background-color: #053d43;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links #usuario #login {
+  font-weight: 700;
+}
+
 .cart-icon {
   position: relative;
   width: 42px;
