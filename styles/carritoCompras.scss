@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", system-ui;
+}
+
+body {
+  background-color: #040D12;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos del encabezado */
+.header {
+  width: 100%;
+  background-color: #003C43;
+  color: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+.search-bar {
+  width: 400px;
+  height: 35px;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 350px;
+  height: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  background: #047A82;
+  width: 50px;
+  height: 100%;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links #logInUser {
+  background-color: #053d43;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links #usuario #login {
+  font-weight: 700;
+}
+
+.cart-icon {
+  position: relative;
+  width: 42px;
+  height: 100%;
+}
+
+.cart-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  top: 0;
+  right: 5px;
+}
+
+/* Estilos del menú inferior */
+.header-bottom {
+  background-color: #f8f8f8;
+  padding: 0 2.5rem;
+}
+
+.categories-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.categories-btn {
+  position: relative;
+  background-color: #008999;
+  color: white;
+  padding: 0.5rem 1.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.categories-content {
+  display: none;
+  position: absolute;
+  background-color: #008999;
+  width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.categories-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+}
+
+.categories-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
+.category-links {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.category-links a {
+  margin-right: 1rem;
+  color: #333;
+}
+
+/* Media queries para responsive */
+@media (min-width: 768px) {
+  .header-bottom {
+    display: block;
+  }
+}
+
+// Estilos para el carrito de compra
+
+main {
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.title {
+  background-color: #047A82;
+  color: white;
+  padding: 15px 20px;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+.carrito-compras {
+  background-color: #bbbbbb;
+  padding: 20px;
+  height: 100%;
+
+  .carrito-compras--vacio {
+    margin-bottom: 40px;
+  }
+
+  .carrito-compras--vacio_boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      background-color: #008999;
+      color: white;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+    }
+  }
+
+  .carrito-compras--lleno {
+    h4 {
+      color: #333333;
+    }
+
+    .carrito-compras--lleno_pedido {  
+      display: flex;
+
+      table {
+        margin: 20px 0;
+        width: 75%;
+
+        th {
+          background-color: #008999;
+          color: white;
+          padding: 4px 0;
+        }
+        
+        td {
+          padding: 2px;
+          text-align: center;
+        }
+
+        .producto {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 6px 10px;
+        }
+      }
+
+      .confirmarPedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        padding: 0 30px;
+
+        button {
+          background-color: #008999;
+          color: white;
+          font-size: 1.3rem;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Icono de whatsapp
+
+.icono-whatsapp {
+  background-color: green;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.2rem;
+  right: 2rem;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+// Footer
+
+footer {
+  background-color: #032B34;
+  width: 100%;
+  padding:3rem 6rem 14px 6rem;
+
+  & .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .footer-title {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  & .footer-container--info {
+    list-style: none;
+    & li {
+      margin-top: 4px;
+      & a {
+        text-decoration: none;
+        color: white;
+        font-size: .95rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  & .footer-container--redes {
+    color: white;
+    & .medios-comunicacion ul {
+        list-style: none;
+        margin: 10px 0;
+      }
+
+    & .redes-sociales {
+      margin: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      & a {
+        width: 40px;
+        height: 40px;
+        border: 2px white solid;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+
+    & .horarios p {
+      margin: 10px 0;
+    }
+  }
+
+  & .copyright {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: .9rem;
+  }
+}
