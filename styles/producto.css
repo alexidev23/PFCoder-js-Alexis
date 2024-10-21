@@ -76,6 +76,16 @@ a {
   align-items: center;
 }
 
+.nav-links #logInUser {
+  background-color: #053d43;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links #usuario #login {
+  font-weight: 700;
+}
+
 .cart-icon {
   position: relative;
   width: 42px;
@@ -155,6 +165,198 @@ a {
     display: block;
   }
 }
+.producto {
+  padding: 20px 20px;
+}
+
+.producto-volver {
+  display: block;
+  width: 220px;
+  border: 2px white solid;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.producto-volver img {
+  transform: rotate(180deg);
+}
+
+.separador {
+  width: 100%;
+  border: 2px rgb(71, 71, 71) solid;
+  margin: 20px 0 0 0;
+}
+
+.producto-container--info {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 4px rgb(71, 71, 71) solid;
+}
+.producto-container--info .info-producto {
+  width: 72%;
+  border-right: 4px rgb(71, 71, 71) solid;
+}
+.producto-container--info .info-producto h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.producto-container--info .producto-imagen {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 0 60px 0;
+  margin: 0 20px 20px 0;
+  height: 500px;
+}
+.producto-container--info .producto-imagen .img-producto {
+  padding: 0 20px;
+}
+.producto-container--info .producto-imagen .img-producto img {
+  display: block;
+  border: 1px rgb(71, 71, 71) solid;
+  margin: 10px auto;
+}
+.producto-container--info .producto-imagen .img-principal {
+  width: 80%;
+  padding: 80px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.producto-container--2 {
+  width: 28%;
+  color: white;
+  padding: 80px 40px;
+}
+.producto-container--2 .precio {
+  padding: 20px 15px;
+  font-size: 2rem;
+  border-left: 2px rgb(71, 71, 71) solid;
+}
+.producto-container--2 .formasPago {
+  width: 100%;
+  margin: 20px 0;
+}
+.producto-container--2 .formasPago h4 {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+.producto-container--2 .formasEnvio {
+  border: 1px white solid;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.producto-container--2 .agregarProducto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.producto-container--2 .agregarProducto input {
+  padding: 10px 2px;
+  text-align: center;
+}
+.producto-container--2 .agregarProducto button {
+  padding: 10px 22px;
+  background-color: #008999;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoria-container {
+  background-color: #00636E;
+  width: 1100px;
+  height: 340px;
+  margin: 4rem auto;
+  border-radius: 1rem;
+  padding: 1rem 1.6rem;
+}
+.categoria-container .categoria-container--titulo {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.categoria-container .categoria-container--titulo .categoria-container--titulo_icono {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categoria-container .categoria-container--titulo h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.categoria-container .categoria-container--productos {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_item {
+  width: 200px;
+  height: 220px;
+  border: 1px white solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-imagen {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-info {
+  color: white;
+  padding: 12px 15px;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-info h4 {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-info p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.categoria-container .categoria-container--productos .categoria-container--productos_icono {
+  height: 65px;
+  width: 65px;
+  border: 2px white solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icono-whatsapp {
   background-color: green;
   color: white;

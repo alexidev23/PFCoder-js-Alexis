@@ -6,8 +6,6 @@
   <link rel="shortcut icon" href="./img/icono.jpg" type="image/x-icon">
   <title>Tienda Tech</title>
   <link rel="stylesheet" href="./styles/producto.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -23,7 +21,7 @@
         <a href="./logIn.html">
           <img src="./img/icons/icon-user.svg" alt="Icono de usuario" height="30" width="30">
         </a>
-        <a class="cart-icon">
+        <a href="./carrito_compras.html" class="cart-icon">
           <img src="./img/icons/icon-cart.svg" alt="Icono de carrito" height="30" width="30">
           <span class="cart-count">0</span>
         </a>
@@ -46,6 +44,134 @@
       </div>
     </div>
   </header>
+
+  <main class="producto">
+    <a href="./categoria.html" class="producto-volver">
+      <img src="./img/icons/arrow-right.svg" alt="Icono de una flecha" width="20" height="20">
+      Volver al catalogo
+    </a>
+    <div class="separador"></div>
+
+    <div class="producto-container">
+      <div class="producto-container--info">
+        <div class="info-producto">
+          <h2>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h2>
+          <div class="producto-imagen">
+            <div class="img-producto">
+              <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="80" height="80">
+              <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="80" height="80">
+              <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="80" height="80">
+              <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="80" height="80">
+            </div>
+            <div class="img-principal">
+              <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="auto" height="100%">
+            </div>
+          </div>
+        </div>
+        <div class="producto-container--2">
+          <div class="precio">
+            <h4>$450.000</h4>
+          </div>
+          <div class="formasPago">
+            <h4>Formas de pago</h4>
+            <img src="./img/formasPagos.jpg" alt="Formas de pagos" width="200">
+          </div>
+          <div class="formasEnvio">
+            <img src="./img/icons/camion.svg" alt="icono de un camion" width="30" height="30">
+            Formas de envio
+          </div>
+          <div class="agregarProducto">
+            <input type="number" value="1" min="1" max="4"></input>
+            <button class="btn-agregarProducto">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="producto-descripcion">
+        <div>
+          ALMACENAMIENTO
+          Disco Sólido: 240Gb
+          Disco Duro: Compatible (No incluido)
+
+          CONECTIVIDAD
+          Wi-Fi: Si
+          Ethernet: Sí
+
+          MEMORIA RAM
+          Capacidad: 8 Gigas
+          Formato: DIMM
+          Expandible: Sí
+
+          PROCESADOR
+          AMD: Ryzen 7
+          Modelo: 5700g
+          Núcleos: 8 (16 Subprocesos)
+          Frecuencia: 4.60Ghz
+          Caché: 16Mb Cache
+
+          PUERTOS
+          Usb 2.0: Sí
+          Hdmi: Sí
+          Audio/Mic 3.5: Sí
+
+          SIN SISTEMA OPERATIVO
+          Windows 10: Compatible
+          Versión: 64-bits
+
+          USO RECOMENDADO
+          Gaming: Casual
+          Arquitectura, Diseño, Edición: Avanzado
+          Hogar, Oficina: Avanzado
+        </div>
+      </div> -->
+    </div>
+
+    <div class="categoria-container">
+      <div class="categoria-container--titulo">
+        <h2>Otros productos destacados</h2>
+      </div>
+      <div class="categoria-container--productos">
+        <a href="./producto.html" class="categoria-container--productos_item">
+          <div class="categoria-container--productos_item-imagen">
+            <img src="./img/productos/computadoras/1.jpg" alt="Imagen del producto" width="auto" height="100%">
+          </div>
+          <div class="categoria-container--productos_item-info">
+            <h4>Pc AMD Ryzen 7 5700G 8Gb SSD 240Gb + Monitor 22</h4>
+            <p>$450.000</p>
+          </div>
+        </a>
+        <a href="./producto.html" class="categoria-container--productos_item">
+          <div class="categoria-container--productos_item-imagen">
+            <img src="./img/productos/computadoras/2.jpg" alt="Imagen del producto" width="auto" height="100%">
+          </div>
+          <div class="categoria-container--productos_item-info">
+            <h4>Pc AMD Ryzen 3 3200G 8Gb SSD 240Gb</h4>
+            <p>$180.000</p>
+          </div>
+        </a>
+        <a href="./producto.html" class="categoria-container--productos_item">
+          <div class="categoria-container--productos_item-imagen">
+            <img src="./img/productos/computadoras/3.jpg" alt="Imagen del producto" width="auto" height="100%">
+          </div>
+          <div class="categoria-container--productos_item-info">
+            <h4>Pc AMD Ryzen 5 5700G 8Gb SSD 500Gb</h4>
+            <p>$240.000</p>
+          </div>
+        </a>
+        <a href="./producto.html" class="categoria-container--productos_item">
+          <div class="categoria-container--productos_item-imagen">
+            <img src="./img/productos/computadoras/4.jpg" alt="Imagen del producto" width="auto" height="100%">
+          </div>
+          <div class="categoria-container--productos_item-info">
+            <h4>Pc AMD Ryzen 7 5700G 16Gb SSD 1Tb</h4>
+            <p>$380.000</p>
+          </div>
+        </a>
+        <a href="./categoria.html" class="categoria-container--productos_icono">
+          <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
+        </a>
+      </div>
+    </div>
+  </main>
 
   <!-- Icono de whatsapp -->
   <a href="http://" target="_blank" rel="noopener noreferrer" class="icono-whatsapp">
@@ -113,5 +239,7 @@
       Copyright © 2023 Tech Shop. Todos los derechos reservados.
     </div>
   </footer>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/productos.js"></script>
 </body>
 </html>
