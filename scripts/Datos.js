@@ -1,11 +1,11 @@
 export const Categorias = [
   {
     "id": 1,
-    "categoria": "televisores"
+    "categoria": "Televisores"
   },
   {
     "id": 2,
-    "categoria": "computadoras"
+    "categoria": "Computadoras"
   },
   {
     "id": 3,
@@ -13,7 +13,7 @@ export const Categorias = [
   },
   {
     "id": 4,
-    "categoria": "celulares"
+    "categoria": "Celulares"
   },
   {
     "id": 5,
@@ -48,7 +48,7 @@ export const Categorias = [
   }
 ]
 
-const Productos = [
+export const Productos = [
   {
     "id": 1,
     "titulo": "Pc AMD Ryzen 3 3200g 8Gb SSD 240",

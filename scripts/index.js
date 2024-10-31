@@ -84,13 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   categoriasProductos.innerHTML = categoriesHTML
 
-  const botonesCategoria = categoriasProductos.querySelectorAll('button');
-  botonesCategoria.forEach(boton => {
+  const botonesMenu = categoriasProductos.querySelectorAll('button');
+  botonesMenu.forEach(boton => {
     boton.addEventListener('click', () => {
       const categoria = boton.getAttribute('data-categoria');
-      mostrarProductos(categoria)
-    })
-  })
+      window.location.href = `./categoria.html?categoria=${categoria}`;
+    });
+  });
 
   // Mostrar algunas categorias
 
@@ -107,9 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
   botones.forEach(boton => {
     boton.addEventListener('click', () => {
       const categoria = boton.getAttribute('data-categoria');
-      mostrarProductos(categoria)
-    })
-  })
+      window.location.href = `./categoria.html?categoria=${categoria}`;
+    });
+  });
 })
 
 // Scripts para el carrusel de la publicidad
@@ -129,7 +129,4 @@ const swiper = new Swiper('.swiper', {
 
 // Mostrar los productos de la categoria seleccionada
 
-const mostrarProductos = (producto) => {
-  console.log(producto)
-  window.location.href = `./categoria.html`
-}
+
