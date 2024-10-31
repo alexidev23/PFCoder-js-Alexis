@@ -24,7 +24,7 @@ if (userData) {
   if (usuarioElemento) {
     usuarioElemento.innerHTML = `
       <p class='login'>Bienvenido, ${newUserData.usuario}!</p>
-      <button id='logOut'><img src='./img/icons/logout-icon.svg' alt='Icono de cerrar sesion' height='20' width='20' /></button>
+      <button id='logOut'><img src='./img/icons/logout-icon.svg' alt='Icono de cerrar sesion'></button>
     `;
 
   } else {
