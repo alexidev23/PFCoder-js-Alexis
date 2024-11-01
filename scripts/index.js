@@ -1,4 +1,4 @@
-import { Categorias } from "./Datos.js";
+import { Categorias, Productos } from "./Datos.js";
 
 // Mostrar datos en la página de bienvenida
 const userData = JSON.parse(localStorage.getItem('user'))
@@ -129,4 +129,69 @@ const swiper = new Swiper('.swiper', {
 
 // Mostrar los productos de la categoria seleccionada
 
+const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
+  // Selecciona el contenedor donde se mostrará la categoría
+  const categoriaContainer = document.querySelector(claseContenedora);
 
+  // Filtra y selecciona hasta 4 productos para la categoría seleccionada
+  const productosFiltrados1 = Productos.filter(item => item.categoria === categoria1).slice(0, 4);
+  const productosFiltrados2 = Productos.filter(item => item.categoria === categoria2).slice(0, 4);
+
+  // // Verifica si hay productos en la categoría
+  // if (productosFiltrados1.length === 0) {
+  //   categoriaContainer.innerHTML = `<p>En estos momentos no tenemos el producto que está buscando</p>`;
+  //   return;
+  // }
+
+  // Genera el HTML para la categoría y sus productos
+  categoriaContainer.innerHTML = `
+    <div class="categoria-container">
+      <div class="categoria-container--titulo">
+        <div class="categoria-container--titulo_icono"></div>
+        <h2>${categoria1.charAt(0).toUpperCase() + categoria1.slice(1)}</h2>
+      </div>
+      <div class="categoria-container--productos">
+        ${productosFiltrados1.map(({ id, titulo, precio, imagenPrincipal }) => `
+          <a href="./producto.html" class="categoria-container--productos_item" id="${id}">
+            <div class="categoria-container--productos_item-imagen">
+              <img src="./img/productos/${imagenPrincipal}" alt="Imagen de ${titulo}" width="auto" height="100%">
+            </div>
+            <div class="categoria-container--productos_item-info">
+              <h4>${titulo}</h4>
+              <p>$${precio}</p>
+            </div>
+          </a>
+        `).join('')}
+        <a href="./categoria.html" class="categoria-container--productos_icono">
+          <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
+        </a>
+      </div>
+    </div>
+
+    <div class="categoria-container">
+      <div class="categoria-container--titulo">
+        <div class="categoria-container--titulo_icono"></div>
+        <h2>${categoria2.charAt(0).toUpperCase() + categoria2.slice(1)}</h2>
+      </div>
+      <div class="categoria-container--productos">
+        ${productosFiltrados2.map(({ id, titulo, precio, imagenPrincipal }) => `
+          <a href="./producto.html" class="categoria-container--productos_item" id="${id}">
+            <div class="categoria-container--productos_item-imagen">
+              <img src="./img/productos/${imagenPrincipal}" alt="Imagen de ${titulo}" width="auto" height="100%">
+            </div>
+            <div class="categoria-container--productos_item-info">
+              <h4>${titulo}</h4>
+              <p>$${precio}</p>
+            </div>
+          </a>
+        `).join('')}
+        <a href="./categoria.html" class="categoria-container--productos_icono">
+          <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
+        </a>
+      </div>
+    </div>
+  `;
+};
+
+mostrarCategoria('Computadoras','Celulares', '.categoria-container--1')
+mostrarCategoria('Notebooks','Televisores', '.categoria-container--2')
