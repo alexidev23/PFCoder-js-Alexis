@@ -263,6 +263,8 @@ a {
   border: 1px white solid;
   border-radius: 10px;
   overflow: hidden;
+  background: none;
+  cursor: pointer;
 }
 .categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-imagen {
   width: 100%;
@@ -274,6 +276,7 @@ a {
 .categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-info {
   color: white;
   padding: 12px 15px;
+  height: 100px;
 }
 .categoria-container .categoria-container--productos .categoria-container--productos_item .categoria-container--productos_item-info h4 {
   width: 100%;
@@ -298,6 +301,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
 }
 
 .icono-whatsapp {

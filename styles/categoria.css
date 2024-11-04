@@ -111,6 +111,7 @@ details[open] summary::after {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  background: none;
 }
 .categoria-container--3_productos .categoria-productos--item:hover {
   transform: scale(1.04);
@@ -125,6 +126,7 @@ details[open] summary::after {
 }
 .categoria-container--3_productos .categoria-productos--item .categoria-productos--item_info {
   color: white;
+  height: 120px;
   padding: 12px 15px;
 }
 .categoria-container--3_productos .categoria-productos--item .categoria-productos--item_info h4 {

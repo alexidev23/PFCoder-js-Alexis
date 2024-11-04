@@ -26,7 +26,7 @@ const mostrarProductos = () => {
     // Si hay productos, los mostramos
     filtrosProductos.forEach(({ id, titulo, precio, imagenPrincipal }) => {
       categoriaProductos.innerHTML += `
-        <a href="./producto.html" class="categoria-productos--item" id="${id}">
+        <button data-producto="${id}" class="categoria-productos--item">
           <div class="categoria-productos--item_imagen">
             <img src="./img/productos/${imagenPrincipal}" alt="${titulo}" width="auto" height="100%">
           </div>
@@ -34,12 +34,31 @@ const mostrarProductos = () => {
             <h4>${titulo}</h4>
             <p>$${precio}</p>
           </div>
-        </a>
+        </button>
       `;
     });
 
     paginacion.className = 'categoria-paginacion mostrar'
+
+    const botones = categoriaProductos.querySelectorAll('button');
+    botones.forEach(boton => {
+      boton.addEventListener('click', () => {
+        const id = boton.getAttribute('data-producto');
+        window.location.href = `./producto.html?id=${id}`;
+        console.log(id)
+      });
+    });
   }
 };
 
 mostrarProductos();
+
+// Actualiza el contador del carrito al cargar la página
+function actualizarContadorCarrito() {
+  const productosEnCarrito = JSON.parse(localStorage.getItem('productos')) || [];
+  const contadorCarrito = document.querySelector('.cart-count');
+  contadorCarrito.textContent = productosEnCarrito.length;
+}
+
+// Actualizando el carrito de compras
+document.addEventListener('DOMContentLoaded', actualizarContadorCarrito);

@@ -126,6 +126,7 @@ details[open] summary::after {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    background: none;
 
     &:hover {
       transform: scale(1.04);
@@ -142,6 +143,7 @@ details[open] summary::after {
 
     .categoria-productos--item_info {
       color: white;
+      height: 120px;
       padding: 12px 15px;
     
       & h4 {

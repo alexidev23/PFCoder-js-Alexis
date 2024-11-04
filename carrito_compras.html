@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/icono.jpg" type="image/x-icon">
   <title>Tienda Tech</title>
+  <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/carritoCompras.css">
 </head>
 <body>
@@ -34,16 +35,9 @@
       <div class="categories-menu">
         <button class="categories-btn">Categorías ▼</button>
         <div class="categories-content">
-          <a href="#">Electrónica</a>
-          <a href="#">Ropa</a>
-          <a href="#">Hogar</a>
-          <a href="#">Deportes</a>
         </div>
       </div>
       <div class="category-links">
-        <a href="#">Ofertas</a>
-        <a href="#">Más Vendidos</a>
-        <a href="#">Nuevo</a>
       </div>
     </div>
   </header>
@@ -53,44 +47,13 @@
       <h1>Carrito de compras</h1>
     </div>
     <div class="carrito-compras" id="carrito">
-      <div class="carrito-compras--lleno">
-        <h4>Descripcion del pedido:</h4>
-        <div class="carrito-compras--lleno_pedido">
-          <table>
-            <tr>
-              <th>Producto</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-              <th>Subtotal</th>
-            </tr>
-            <tr>
-              <td class="producto">
-                <img src="./img/productos/computadoras/1.jpg" alt="Producto 1" width="60" height="60">
-                <p>Pc AMD Ryzen 7 5700G 16Gb SSD 1Tb</p>
-              </td>
-              <td>$380.000</td>
-              <td>1</td>
-              <td>$380.000</td>
-            </tr>
-            <tr>
-              <td class="producto">
-                <img src="./img/productos/computadoras/3.jpg" alt="Producto 2" width="60" height="60">
-                <p>Pc AMD Ryzen 5 5700G 8Gb SSD 500Gb</p>
-              </td>
-              <td>$240.000</td>
-              <td>2</td>
-              <td>$480.000</td>
-          </table>
-          <div class="confirmarPedido">
-            <div class="confirmarPedido-info">
-              <p class="precioTotal">Total a pagar: $860.000</p>
-              <p>Envío gratis</p>
-              <p>Descuento en cupones: $0.00</p>
-            </div>
-            <button id="btn-confirmarPedido">Confirmar Compra</button>
-          </div>
-        </div>
+      <div class="carrito-compras--vacio">
+        <p>El carrito de compras esta vacío.</p>
+        <p>Puedes agregar productos desde el botón añadir en el catálogo.</p>
       </div>
+      <div class="carrito-compras--vacio_boton">
+        <a href="./index.html" rel="noopener noreferrer">Continuar</a>
+      </div
     </div>
   </main>
 
@@ -161,7 +124,7 @@
       Copyright © 2023 Tech Shop. Todos los derechos reservados.
     </div>
   </footer>
-  <script src="./scripts/index.js"></script>
-  <script src="./scripts/carritoCompras.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/carritoCompras.js"></script>
 </body>
 </html>

@@ -137,12 +137,6 @@ const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
   const productosFiltrados1 = Productos.filter(item => item.categoria === categoria1).slice(0, 4);
   const productosFiltrados2 = Productos.filter(item => item.categoria === categoria2).slice(0, 4);
 
-  // // Verifica si hay productos en la categoría
-  // if (productosFiltrados1.length === 0) {
-  //   categoriaContainer.innerHTML = `<p>En estos momentos no tenemos el producto que está buscando</p>`;
-  //   return;
-  // }
-
   // Genera el HTML para la categoría y sus productos
   categoriaContainer.innerHTML = `
     <div class="categoria-container">
@@ -152,7 +146,7 @@ const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
       </div>
       <div class="categoria-container--productos">
         ${productosFiltrados1.map(({ id, titulo, precio, imagenPrincipal }) => `
-          <a href="./producto.html" class="categoria-container--productos_item" id="${id}">
+          <button data-producto=${id} href="./producto.html" class="categoria-container--productos_item">
             <div class="categoria-container--productos_item-imagen">
               <img src="./img/productos/${imagenPrincipal}" alt="Imagen de ${titulo}" width="auto" height="100%">
             </div>
@@ -160,11 +154,13 @@ const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
               <h4>${titulo}</h4>
               <p>$${precio}</p>
             </div>
-          </a>
+          </button>
         `).join('')}
-        <a href="./categoria.html" class="categoria-container--productos_icono">
-          <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
-        </a>
+        <div class="cajaBtn">
+          <button data-categoria="${categoria1}" class="categoria-container--productos_icono">
+            <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
+          </button>
+        </div>
       </div>
     </div>
 
@@ -175,7 +171,7 @@ const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
       </div>
       <div class="categoria-container--productos">
         ${productosFiltrados2.map(({ id, titulo, precio, imagenPrincipal }) => `
-          <a href="./producto.html" class="categoria-container--productos_item" id="${id}">
+          <button id="BotonProducto" data-producto="${id}" class="categoria-container--productos_item">
             <div class="categoria-container--productos_item-imagen">
               <img src="./img/productos/${imagenPrincipal}" alt="Imagen de ${titulo}" width="auto" height="100%">
             </div>
@@ -183,15 +179,61 @@ const mostrarCategoria = (categoria1, categoria2,claseContenedora) => {
               <h4>${titulo}</h4>
               <p>$${precio}</p>
             </div>
-          </a>
+          </button>
         `).join('')}
-        <a href="./categoria.html" class="categoria-container--productos_icono">
-          <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
-        </a>
+        <div class="cajaBtn">
+          <button data-categoria="${categoria2}" class="categoria-container--productos_icono">
+            <img src="./img/icons/arrow-right.svg" alt="Icono de flecha" width="40" height="40">
+          </button>
+        </div>
       </div>
     </div>
   `;
 };
 
-mostrarCategoria('Computadoras','Celulares', '.categoria-container--1')
-mostrarCategoria('Notebooks','Televisores', '.categoria-container--2')
+mostrarCategoria('Computadoras', 'Celulares', '.categoria-container--1')
+mostrarCategoria('Notebooks', 'Televisores', '.categoria-container--2')
+
+// const cajaBotonCategoria = document.querySelector(".cajaBtn")
+
+// const botonesCategoria = cajaBotonCategoria.querySelectorAll('button');
+// botonesCategoria.forEach(boton => {
+//   boton.addEventListener('click', () => {
+//     const categoria = boton.getAttribute('data-categoria');
+//     window.location.href = `./categoria.html?categoria=${categoria}`;
+//   });
+// });
+
+// const cateogriaProducto = document.querySelector('.categoria-container--productos')
+
+// const botones = cateogriaProducto.querySelectorAll('#BotonProducto');
+// botones.forEach(boton => {
+//   boton.addEventListener('click', () => {
+//     const id = boton.getAttribute('data-producto');
+//     window.location.href = `./producto.html?id=${id}`;
+//     console.log(id)
+//   });
+// });
+
+
+// const productoItem = document.querySelector('.categoria-container--productos')
+
+// const botones = productoItem.querySelectorAll('button');
+
+// botones.forEach(boton => {
+//   boton.addEventListener('click', () => {
+//     const id = boton.getAttribute('data-producto');
+//     window.location.href = `./producto.html?id=${id}`;
+//     console.log(id)
+//   });
+// });
+
+// Actualiza el contador del carrito al cargar la página
+function actualizarContadorCarrito() {
+  const productosEnCarrito = JSON.parse(localStorage.getItem('productos')) || [];
+  const contadorCarrito = document.querySelector('.cart-count');
+  contadorCarrito.textContent = productosEnCarrito.length;
+}
+
+// Actualizando el carrito de compras
+document.addEventListener('DOMContentLoaded', actualizarContadorCarrito);

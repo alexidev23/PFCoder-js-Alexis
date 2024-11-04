@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
 
   img {
     transform: rotate(180deg);
@@ -27,6 +30,10 @@
 }
 
 // Estilos para el producto
+
+.producto-container {
+  padding-bottom: 100px;
+}
 
 .producto-container--info {
   display: flex;
@@ -125,6 +132,11 @@
       justify-content: center;
     }
   }
+}
+
+.producto-descripcion {
+  color: white;
+  padding: 10px 30px;
 }
 
 
