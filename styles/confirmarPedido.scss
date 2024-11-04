@@ -1,0 +1,32 @@
+section {
+  width: 1000px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: white;
+}
+
+#confirmarPedido {
+  background-color: #00606B;
+  border-radius: 20px;
+  width: 500px;
+  color: white;
+  padding: 20px 40px;
+  margin: 20px auto;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.wave-group {
+  margin: 10px 0 !important;
+}
+
+input {
+  width: 100% !important;
+}
+
+.bar {
+  width: 100% !important;
+}

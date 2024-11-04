@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/icono.jpg" type="image/x-icon">
+  <title>Tienda Tech</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/sesionUsuario.css">
+  <link rel="stylesheet" href="./styles/confirmarPedido.css">
+</head>
+<body>
+  <section>
+    <h1>A continuacion ingrese los siguiente datos para finalizar la compra:</h1>
+    <form method="post" id="confirmarPedido">
+      <div class="wave-group">
+        <input required type="text" class="input" id="nombre">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">N</span>
+          <span class="label-char" style="--index: 1">o</span>
+          <span class="label-char" style="--index: 2">m</span>
+          <span class="label-char" style="--index: 3">b</span>
+          <span class="label-char" style="--index: 4">r</span>
+          <span class="label-char" style="--index: 5">e</span>
+        </label>
+      </div>
+      <div class="wave-group">
+        <input required type="email" class="input" id="email">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">E</span>
+          <span class="label-char" style="--index: 1">m</span>
+          <span class="label-char" style="--index: 2">a</span>
+          <span class="label-char" style="--index: 3">i</span>
+          <span class="label-char" style="--index: 4">l</span>
+        </label>
+      </div>
+      <div class="wave-group">
+        <input required type="text" class="input" id="direccion">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">D</span>
+          <span class="label-char" style="--index: 1">i</span>
+          <span class="label-char" style="--index: 2">r</span>
+          <span class="label-char" style="--index: 3">r</span>
+          <span class="label-char" style="--index: 4">e</span>
+          <span class="label-char" style="--index: 5">c</span>
+          <span class="label-char" style="--index: 6">c</span>
+          <span class="label-char" style="--index: 7">i</span>
+          <span class="label-char" style="--index: 8">o</span>
+          <span class="label-char" style="--index: 9">n</span>
+        </label>
+      </div>
+      <div class="wave-group">
+        <input required type="number" class="input" id="codigoPostal">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">C</span>
+          <span class="label-char" style="--index: 1">o</span>
+          <span class="label-char" style="--index: 2">d</span>
+          <span class="label-char" style="--index: 3">i</span>
+          <span class="label-char" style="--index: 4">g</span>
+          <span class="label-char" style="--index: 5;margin-right: 10px;">o</span>
+
+          <span class="label-char" style="--index: 6">P</span>
+          <span class="label-char" style="--index: 7">o</span>
+          <span class="label-char" style="--index: 8">s</span>
+          <span class="label-char" style="--index: 9">t</span>
+          <span class="label-char" style="--index: 10">a</span>
+          <span class="label-char" style="--index: 11">l</span>
+        </label>
+      </div>
+      <div class="wave-group">
+        <input required type="number" class="input" id="tel">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">T</span>
+          <span class="label-char" style="--index: 1">e</span>
+          <span class="label-char" style="--index: 2">l</span>
+          <span class="label-char" style="--index: 3">e</span>
+          <span class="label-char" style="--index: 4">f</span>
+          <span class="label-char" style="--index: 5">o</span>
+          <span class="label-char" style="--index: 6">n</span>
+          <span class="label-char" style="--index: 7">o</span>
+        </label>
+      </div>
+      <button class="btn-confirmarPedido">Confirmar Pedido</button>
+    </form>
+  </section>
+
+  <script src="./scripts/confirmarPedido.js"></script>
+</body>
+</html>
