@@ -6,9 +6,10 @@
   <link rel="shortcut icon" href="./img/icono.jpg" type="image/x-icon">
   <title>Tienda Tech</title>
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/categoria/categoria.css">
+  <link rel="stylesheet" href="./styles/carrito/carrito.css">
 </head>
 <body>
+  <!-- header -->
   <header class="header">
     <div class="header-top">
       <a href="./index.html" class="logo">Tech Shop</a>
@@ -37,43 +38,19 @@
     </div>
   </header>
 
-  <div class="categoria">
-    <div class="categoria-container--1">
-      <h1>Categoria del producto</h1>
-      <div class="categoria-container--1_filtros">
-        <div>
-          <label for="orden">Ordenar por:</label>
-          <select name="orden" id="ordenar">
-            <option value=""></option>
-            <option value="menorPrecio">Menor precio</option>
-            <option value="mayorPrecio">Mayor precio</option>
-          </select>
-        </div>
-        <!-- <div>
-          <label for="mostrar">Mostrar:</label>
-          <select name="mostrar" id="mostrar">
-            <option value=""></option>
-            <option value="10" selected>10</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-          </select>
-        </div> -->
-      </div>
+  <main>
+    <div class="title">
+      <h1>Carrito de compras</h1>
     </div>
-    <div class="categoria-container--2">
-      <div class="categoria-container--3_productos">
-        <div class="categoria-container--3_productos-caja">
-          <div class="loader"></div>
-        </div>
-      </div>
+    <div class="carrito-compras" id="carrito">
     </div>
-  </div>
+  </main>
 
   <!-- Icono de whatsapp -->
   <a href="http://" target="_blank" rel="noopener noreferrer" class="icono-whatsapp">
     <img src="./img/icons/icon-whatsapp.svg" alt="Icono de Whatsapp" width="42" height="42">
   </a>
-
+  
   <!-- Footer -->
   <footer>
     <div class="footer-container">
@@ -134,8 +111,8 @@
       Copyright © 2023 Tech Shop. Todos los derechos reservados.
     </div>
   </footer>
-
+  
   <script type="module" src="./scripts/main.js"></script>
-  <script type="module" src="./scripts/categoria/categoria.js"></script>
+  <script type="module" src="./scripts/carrito/carrito.js"></script>
 </body>
 </html>

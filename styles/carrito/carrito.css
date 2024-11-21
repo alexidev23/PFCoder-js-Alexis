@@ -1,0 +1,121 @@
+main {
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.title {
+  background-color: #047A82;
+  color: white;
+  padding: 15px 20px;
+}
+
+.title h1 {
+  text-transform: uppercase;
+}
+
+.carrito-compras {
+  background-color: #bbbbbb;
+  padding: 20px;
+  height: 100%;
+}
+
+.carrito-compras .carrito-compras--vacio {
+  margin-bottom: 40px;
+}
+
+.carrito-compras .carrito-compras--vacio_boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrito-compras .carrito-compras--vacio_boton a {
+  background-color: #008999;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.carrito-compras .carrito-compras--lleno h4 {
+  color: #333333;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido {
+  display: flex;
+}
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido table {
+  margin: 20px 0;
+  width: 75%;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido table th {
+  background-color: #008999;
+  color: white;
+  padding: 4px 0;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido table td {
+  padding: 2px;
+  text-align: center;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido table .producto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido .confirmarPedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 30px;
+}
+
+.carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido .confirmarPedido button {
+  background-color: #008999;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-eliminar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-eliminar button:hover {
+  transform: scale(.9);
+}
+
+
+@media (max-width: 768px) {
+
+  .carrito-compras {
+    padding: 10px;
+  }
+  
+  .carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido {
+    flex-direction: column;
+  }
+  .carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido table {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .carrito-compras .carrito-compras--lleno .carrito-compras--lleno_pedido .confirmarPedido {
+    align-items: flex-start;
+  }
+}
