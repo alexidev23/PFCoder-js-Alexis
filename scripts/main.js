@@ -1,6 +1,6 @@
 // Funcion para obtener el usuario
 
-const sesionIniciada = localStorage.getItem('sesionIniciada') ? JSON.parse(localStorage.getItem('sesionIniciada')) : null
+export const sesionIniciada = localStorage.getItem('sesionIniciada') ? JSON.parse(localStorage.getItem('sesionIniciada')) : null
 
 if (sesionIniciada) {
   const usuarioElemento = document.querySelector('#Usuario')
@@ -56,7 +56,7 @@ window.onclick = (event) => {
 
 // Obtenemos las categorias
 const obtenerCategorias = async () => {
-  const URL = './data/categorias.json'
+  const URL = '../data/categorias.json'
   try {
     const response = await fetch(URL)
     const categorias = await response.json()

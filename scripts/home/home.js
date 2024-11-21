@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
 // Funcion para mostrar algunos productos de las categorias ingresadas
 // Función para obtener y mostrar el producto
 const obtenerProducto = async () => {
-  const URL = '../../productos.json'
+  const URL = '../../data/productos.json'
   try {
     const response = await fetch(URL)
     const producto = await response.json()
