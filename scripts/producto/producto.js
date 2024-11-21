@@ -2,7 +2,7 @@ import { userData, newUserData, actualizarContadorCarrito } from '../main.js'
 
 // Función para obtener y mostrar el producto
 const obtenerProducto = async () => {
-  const URL = '../../productos.json'
+  const URL = '/productos.json'
   try {
     const response = await fetch(URL)
     const producto = await response.json()
