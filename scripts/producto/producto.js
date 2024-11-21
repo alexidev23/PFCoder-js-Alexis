@@ -1,8 +1,8 @@
-import { userData, newUserData, actualizarContadorCarrito } from '../main.js'
+import { userData, actualizarContadorCarrito } from '../main.js'
 
 // Función para obtener y mostrar el producto
 const obtenerProducto = async () => {
-  const URL = '/productos.json'
+  const URL = '../../productos.json'
   try {
     const response = await fetch(URL)
     const producto = await response.json()
@@ -84,7 +84,7 @@ const mostrarProducto = (producto) => {
       e.preventDefault()
 
       // Verificar si el usuario está logueado
-      if (userData === null && newUserData === null) {
+      if (userData === null) {
         Toastify({
           text: "Primero debe iniciar sesion o registrarse",
           duration: 1000,
