@@ -21,13 +21,11 @@
   },
   {
     "id": 6,
-    "categoria": "Componentes",
-    "subCategoria": ["motherboard", "tarjeta grafica", "ram", "procesadores", "fuente de energia", "almacenamiento", "gabinetes", "refrigeracion"]
+    "categoria": "Componentes"
   },
   {
     "id": 7,
-    "categoria": "Perifericos",
-    "subCategoria": ["teclado", "mouse", "auriculares", "camara", "microfono", "almacenamiento portatil", "mousepad", "parlantes"]
+    "categoria": "Perifericos"
   },
   {
     "id": 8,
@@ -39,8 +37,7 @@
   },
   {
     "id": 10,
-    "categoria": "Accesorios",
-    "subCategoria": ["cables", "cargadores", "hub usb"]
+    "categoria": "Accesorios"
   },
   {
     "id": 11,
