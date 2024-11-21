@@ -1,5 +1,5 @@
 const obtenerProductos = async () => {
-  const URL = '../../data/productos.json'
+  const URL = '../../productos.json'
   try {
     const response = await fetch(URL)
     const productos = await response.json()

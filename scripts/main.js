@@ -56,7 +56,7 @@ window.onclick = (event) => {
 
 // Obtenemos las categorias
 const obtenerCategorias = async () => {
-  const URL = '../data/categorias.json'
+  const URL = '../categorias.json'
   try {
     const response = await fetch(URL)
     const categorias = await response.json()
